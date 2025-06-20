@@ -94,7 +94,7 @@
           "UserName": "a"
         },
         {
-          "id": 20631,
+          "id": 20346,
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
@@ -145,7 +145,7 @@
           "UserName": "b"
         },
         {
-          "id": 20632,
+          "id": 20347,
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
@@ -196,14 +196,14 @@
           "UserName": "c"
         },
         {
-          "id": 20633,
+          "id": 20348,
           "kind": {
             "DecisionVariable": {
               "domain": {
-                "DomainSet": [
+                "Set": [
                   "None",
                   {
-                    "IntDomain": [
+                    "Int": [
                       {
                         "Bounded": [
                           1,
