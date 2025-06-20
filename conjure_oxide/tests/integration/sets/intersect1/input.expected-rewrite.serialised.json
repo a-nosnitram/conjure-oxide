@@ -195,10 +195,14 @@
     "table": [
       [
         {
-          "UserName": "a"
+          "User": "a"
         },
         {
+<<<<<<< HEAD
           "id": 20628,
+=======
+          "id": 20343,
+>>>>>>> a02c46ab5 (refactor: remove Name suffix from Name enum variants)
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
@@ -240,16 +244,20 @@
             }
           },
           "name": {
-            "UserName": "a"
+            "User": "a"
           }
         }
       ],
       [
         {
-          "UserName": "b"
+          "User": "b"
         },
         {
+<<<<<<< HEAD
           "id": 20629,
+=======
+          "id": 20344,
+>>>>>>> a02c46ab5 (refactor: remove Name suffix from Name enum variants)
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
@@ -291,16 +299,20 @@
             }
           },
           "name": {
-            "UserName": "b"
+            "User": "b"
           }
         }
       ],
       [
         {
-          "UserName": "c"
+          "User": "c"
         },
         {
+<<<<<<< HEAD
           "id": 20630,
+=======
+          "id": 20345,
+>>>>>>> a02c46ab5 (refactor: remove Name suffix from Name enum variants)
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
@@ -329,7 +341,7 @@
             }
           },
           "name": {
-            "UserName": "c"
+            "User": "c"
           }
         }
       ]
