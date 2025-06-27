@@ -74,33 +74,20 @@ pub fn eval_constant(expr: &Expr) -> Option<Lit> {
                 Expr::AbstractLiteral(_, AbstractLiteral::Set(a)),
                 Expr::AbstractLiteral(_, AbstractLiteral::Set(b)),
             ) => {
-                //create hashset of the first set
-                let mut list1: HashSet<Lit> = HashSet::new();
-                for expr in a.iter() {
-                    if let Expr::Atomic(_, Atom::Literal(x)) = expr {
-                        list1.insert(x.clone());
-                    } else {
-                        return None;
-                    }
+                let a_set: HashSet<Lit> = a.iter().cloned().collect();
+                let b_set: HashSet<Lit> = b.iter().cloned().collect();
+
+                if a_set.difference(&b_set).count() > 0 {
+                    Some(Lit::Bool(a_set.is_superset(&b_set)))
+                } else {
+                    Some(Lit::Bool(false))
                 }
-                // create hashset of the second set
-                let mut list2: HashSet<Lit> = HashSet::new();
-                for expr in b.iter() {
-                    if let Expr::Atomic(_, Atom::Literal(x)) = expr {
-                        list2.insert(x.clone());
-                    } else {
-                        return None;
-                    }
-                }
-                // return their intersection
-                let mut list: Vec<Lit> = Vec::new();
-                for expr in list1.intersection(&list2) {
-                    list.push(expr.clone());
-                }
-                Some(Lit::AbstractLiteral(AbstractLiteral::Set(list)))
             }
+            _ => None,
+        },
+        Expr::SupsetEq(_, a, b) => match (a.as_ref(), b.as_ref()) {
             (
-                Expr::AbstractLiteral(_, AbstractLiteral::Set(a)),
+                Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(a)))),
                 Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),
             )
             | (
@@ -110,12 +97,11 @@ pub fn eval_constant(expr: &Expr) -> Option<Lit> {
                 let a_set: HashSet<Lit> = a.iter().cloned().collect();
                 let b_set: HashSet<Lit> = b.iter().cloned().collect();
 
-                let result = if b_set.difference(&a_set).count() > 0 {
+                if b_set.difference(&a_set).count() > 0 {
                     Some(Lit::Bool(a_set.is_subset(&b_set)))
                 } else {
                     Some(Lit::Bool(false))
-                };
-                result
+                }
             }
             _ => None,
         },
@@ -176,9 +162,7 @@ pub fn eval_constant(expr: &Expr) -> Option<Lit> {
                 Expr::AbstractLiteral(_, AbstractLiteral::Set(a)),
                 Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),
             )
-            | (
-                Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),
-            ) => {
+            | (Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),) => {
                 let mut res: Vec<Lit> = Vec::new();
                 for lit in a.iter() {
                     res.push(lit.clone());
