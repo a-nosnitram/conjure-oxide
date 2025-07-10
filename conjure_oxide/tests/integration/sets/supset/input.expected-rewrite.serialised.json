@@ -269,7 +269,7 @@
           "User": "a"
         },
         {
-          "id": 22151,
+          "id": 0,
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
@@ -333,7 +333,7 @@
           "User": "b"
         },
         {
-          "id": 22152,
+          "id": 1,
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
