@@ -269,11 +269,7 @@
           "User": "a"
         },
         {
-<<<<<<< HEAD
-          "id": 20639,
-=======
-          "id": 20354,
->>>>>>> a02c46ab5 (refactor: remove Name suffix from Name enum variants)
+          "id": 22143,
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
@@ -337,11 +333,7 @@
           "User": "b"
         },
         {
-<<<<<<< HEAD
-          "id": 20640,
-=======
-          "id": 20355,
->>>>>>> a02c46ab5 (refactor: remove Name suffix from Name enum variants)
+          "id": 22144,
           "kind": {
             "ValueLetting": {
               "AbstractLiteral": [
