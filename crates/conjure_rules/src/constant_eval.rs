@@ -1,12 +1,12 @@
 #![allow(dead_code)]
-use conjure_core::ast::{
-    matrix, AbstractLiteral, Atom, Expression as Expr, Literal as Lit, SymbolTable,
+use conjure_cp_core::ast::{
+    AbstractLiteral, Atom, Expression as Expr, Literal as Lit, SymbolTable, matrix,
 };
-use conjure_core::into_matrix;
-use conjure_core::metadata::Metadata;
-use conjure_core::rule_engine::{
-    register_rule, register_rule_set, ApplicationError::RuleNotApplicable, ApplicationResult,
-    Reduction,
+use conjure_cp_core::into_matrix;
+use conjure_cp_core::metadata::Metadata;
+use conjure_cp_core::rule_engine::{
+    ApplicationError::RuleNotApplicable, ApplicationResult, Reduction, register_rule,
+    register_rule_set,
 };
 use itertools::{izip, Itertools as _};
 use std::collections::HashSet;
@@ -771,7 +771,7 @@ fn unwrap_expr<T: TryFrom<Lit>>(expr: &Expr) -> Option<T> {
 #[cfg(test)]
 mod tests {
     use crate::eval_constant;
-    use conjure_core::ast::{Expression, Moo};
+    use conjure_cp_core::ast::{Expression, Moo};
     use conjure_essence_macros::essence_expr;
 
     #[test]
