@@ -1,0 +1,125 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Imply": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 216
+                }
+              ]
+            },
+            {
+              "Lt": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 217
+                    }
+                  ]
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Literal": {
+                        "Int": 3
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 113,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "A"
+        },
+        {
+          "id": 216,
+          "kind": {
+            "ValueLetting": {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Literal": {
+                    "Bool": true
+                  }
+                }
+              ]
+            }
+          },
+          "name": {
+            "User": "A"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 217,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      20
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Imply": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 340
+                }
+              ]
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 341
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 185,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 340,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 341,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ]
+    ]
+  }
+}

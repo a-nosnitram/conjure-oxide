@@ -1,0 +1,112 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 168
+                }
+              ]
+            },
+            {
+              "Neg": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 169
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 70,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "x"
+        },
+        {
+          "id": 168,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      2
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "x"
+          }
+        }
+      ],
+      [
+        {
+          "User": "y"
+        },
+        {
+          "id": 169,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "y"
+          }
+        }
+      ]
+    ]
+  }
+}

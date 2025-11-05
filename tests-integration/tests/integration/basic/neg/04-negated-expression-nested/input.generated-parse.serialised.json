@@ -1,0 +1,176 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 149
+                }
+              ]
+            },
+            {
+              "UnsafeDiv": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Neg": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "UnsafeDiv": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Reference": 150
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Reference": 151
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 151
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 156,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "x"
+        },
+        {
+          "id": 149,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      3
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "x"
+          }
+        }
+      ],
+      [
+        {
+          "User": "y"
+        },
+        {
+          "id": 150,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "y"
+          }
+        }
+      ],
+      [
+        {
+          "User": "z"
+        },
+        {
+          "id": 151,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "z"
+          }
+        }
+      ]
+    ]
+  }
+}

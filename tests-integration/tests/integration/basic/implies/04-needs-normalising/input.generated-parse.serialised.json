@@ -1,0 +1,409 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Not": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Imply": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Not": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Reference": 126
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Not": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Reference": 127
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Imply": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Not": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 118
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Not": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 119
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Imply": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 120
+                }
+              ]
+            },
+            {
+              "Imply": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 121
+                    }
+                  ]
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 122
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Imply": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Imply": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 125
+                    }
+                  ]
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 123
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Imply": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 125
+                    }
+                  ]
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 124
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 132,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 118,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 119,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 120,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ],
+      [
+        {
+          "User": "d"
+        },
+        {
+          "id": 121,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "d"
+          }
+        }
+      ],
+      [
+        {
+          "User": "e"
+        },
+        {
+          "id": 122,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "e"
+          }
+        }
+      ],
+      [
+        {
+          "User": "f"
+        },
+        {
+          "id": 123,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "f"
+          }
+        }
+      ],
+      [
+        {
+          "User": "g"
+        },
+        {
+          "id": 124,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "g"
+          }
+        }
+      ],
+      [
+        {
+          "User": "h"
+        },
+        {
+          "id": 125,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "h"
+          }
+        }
+      ],
+      [
+        {
+          "User": "x"
+        },
+        {
+          "id": 126,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "x"
+          }
+        }
+      ],
+      [
+        {
+          "User": "y"
+        },
+        {
+          "id": 127,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "y"
+          }
+        }
+      ]
+    ]
+  }
+}

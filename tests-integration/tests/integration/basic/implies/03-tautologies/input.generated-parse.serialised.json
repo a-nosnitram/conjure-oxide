@@ -1,0 +1,340 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Imply": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 112
+                }
+              ]
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 112
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Or": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Matrix": [
+                    [
+                      {
+                        "Imply": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 109
+                              }
+                            ]
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 114
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "Imply": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 114
+                              }
+                            ]
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 109
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    {
+                      "Int": [
+                        {
+                          "UnboundedR": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Or": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Matrix": [
+                    [
+                      {
+                        "Imply": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 110
+                              }
+                            ]
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 111
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "Imply": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 110
+                              }
+                            ]
+                          },
+                          {
+                            "Not": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Atomic": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Reference": 111
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    {
+                      "Int": [
+                        {
+                          "UnboundedR": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 126,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 109,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 110,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 111,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ],
+      [
+        {
+          "User": "x"
+        },
+        {
+          "id": 112,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "x"
+          }
+        }
+      ],
+      [
+        {
+          "User": "y"
+        },
+        {
+          "id": 113,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "y"
+          }
+        }
+      ],
+      [
+        {
+          "User": "z"
+        },
+        {
+          "id": 114,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "z"
+          }
+        }
+      ]
+    ]
+  }
+}

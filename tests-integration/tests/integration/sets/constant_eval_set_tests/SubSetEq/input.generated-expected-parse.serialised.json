@@ -1,0 +1,421 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 396
+                }
+              ]
+            },
+            {
+              "SubsetEq": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Set": [
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 1
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 2
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Set": [
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 1
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 2
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 3
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 397
+                }
+              ]
+            },
+            {
+              "SubsetEq": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Set": [
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 1
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 2
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 3
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Set": [
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 1
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 2
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 3
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 398
+                }
+              ]
+            },
+            {
+              "SubsetEq": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Set": [
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 4
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Set": [
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 1
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 2
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Literal": {
+                                "Int": 3
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 242,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 396,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 397,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 398,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Not": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Eq": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 105
+                    }
+                  ]
+                },
+                {
+                  "UnsafeDiv": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Reference": 106
+                        }
+                      ]
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Reference": 107
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 52,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 105,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      0,
+                      3
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 106,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      0,
+                      3
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 107,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      0,
+                      3
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ]
+    ]
+  }
+}

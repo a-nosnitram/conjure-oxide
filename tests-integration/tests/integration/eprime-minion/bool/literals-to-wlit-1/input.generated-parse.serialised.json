@@ -1,0 +1,302 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Or": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Matrix": [
+                    [
+                      {
+                        "Atomic": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Reference": 363
+                          }
+                        ]
+                      },
+                      {
+                        "Atomic": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Reference": 364
+                          }
+                        ]
+                      }
+                    ],
+                    {
+                      "Int": [
+                        {
+                          "UnboundedR": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Or": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Matrix": [
+                    [
+                      {
+                        "Not": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 365
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "And": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "AbstractLiteral": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Matrix": [
+                                  [
+                                    {
+                                      "Atomic": [
+                                        {
+                                          "clean": false,
+                                          "etype": null
+                                        },
+                                        {
+                                          "Reference": 364
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Atomic": [
+                                        {
+                                          "clean": false,
+                                          "etype": null
+                                        },
+                                        {
+                                          "Reference": 366
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  {
+                                    "Int": [
+                                      {
+                                        "UnboundedR": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    {
+                      "Int": [
+                        {
+                          "UnboundedR": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Atomic": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Reference": 364
+            }
+          ]
+        },
+        {
+          "Or": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Matrix": [
+                    [
+                      {
+                        "Atomic": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Reference": 366
+                          }
+                        ]
+                      },
+                      {
+                        "Atomic": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "Reference": 365
+                          }
+                        ]
+                      }
+                    ],
+                    {
+                      "Int": [
+                        {
+                          "UnboundedR": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 523,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 363,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 364,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 365,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ],
+      [
+        {
+          "User": "d"
+        },
+        {
+          "id": 366,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "d"
+          }
+        }
+      ]
+    ]
+  }
+}

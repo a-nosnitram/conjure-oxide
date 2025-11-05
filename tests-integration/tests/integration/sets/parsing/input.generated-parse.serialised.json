@@ -1,0 +1,420 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      []
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 385,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 284,
+          "kind": {
+            "ValueLetting": {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Set": [
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Reference": 281
+                        }
+                      ]
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Reference": 282
+                        }
+                      ]
+                    },
+                    {
+                      "Sum": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "AbstractLiteral": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Matrix": [
+                                [
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Literal": {
+                                          "Int": 1
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Literal": {
+                                          "Int": 2
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                {
+                                  "Int": [
+                                    {
+                                      "UnboundedR": 1
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Sum": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "AbstractLiteral": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Matrix": [
+                                [
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Reference": 281
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Reference": 282
+                                      }
+                                    ]
+                                  }
+                                ],
+                                {
+                                  "Int": [
+                                    {
+                                      "UnboundedR": 1
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Abs": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Reference": 281
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 281,
+          "kind": {
+            "ValueLetting": {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Literal": {
+                    "Int": 3
+                  }
+                }
+              ]
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 283,
+          "kind": {
+            "ValueLetting": {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Set": [
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Literal": {
+                            "Int": 1
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Literal": {
+                            "Int": 2
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Literal": {
+                            "Int": 3
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ],
+      [
+        {
+          "User": "m"
+        },
+        {
+          "id": 282,
+          "kind": {
+            "ValueLetting": {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Literal": {
+                    "Int": 4
+                  }
+                }
+              ]
+            }
+          },
+          "name": {
+            "User": "m"
+          }
+        }
+      ],
+      [
+        {
+          "User": "z"
+        },
+        {
+          "id": 285,
+          "kind": {
+            "ValueLetting": {
+              "AbstractLiteral": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Set": [
+                    {
+                      "Eq": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Reference": 281
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Reference": 282
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Gt": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Reference": 281
+                            }
+                          ]
+                        },
+                        {
+                          "Atomic": [
+                            {
+                              "clean": false,
+                              "etype": null
+                            },
+                            {
+                              "Reference": 282
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Literal": {
+                            "Bool": true
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Literal": {
+                            "Bool": false
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "name": {
+            "User": "z"
+          }
+        }
+      ]
+    ]
+  }
+}

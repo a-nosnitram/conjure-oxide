@@ -1,0 +1,339 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 136
+                }
+              ]
+            },
+            {
+              "Sum": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Matrix": [
+                        [
+                          {
+                            "Sum": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "AbstractLiteral": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Matrix": [
+                                      [
+                                        {
+                                          "Neg": [
+                                            {
+                                              "clean": false,
+                                              "etype": null
+                                            },
+                                            {
+                                              "Atomic": [
+                                                {
+                                                  "clean": false,
+                                                  "etype": null
+                                                },
+                                                {
+                                                  "Reference": 137
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "Neg": [
+                                            {
+                                              "clean": false,
+                                              "etype": null
+                                            },
+                                            {
+                                              "Minus": [
+                                                {
+                                                  "clean": false,
+                                                  "etype": null
+                                                },
+                                                {
+                                                  "Sum": [
+                                                    {
+                                                      "clean": false,
+                                                      "etype": null
+                                                    },
+                                                    {
+                                                      "AbstractLiteral": [
+                                                        {
+                                                          "clean": false,
+                                                          "etype": null
+                                                        },
+                                                        {
+                                                          "Matrix": [
+                                                            [
+                                                              {
+                                                                "Atomic": [
+                                                                  {
+                                                                    "clean": false,
+                                                                    "etype": null
+                                                                  },
+                                                                  {
+                                                                    "Reference": 138
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "Atomic": [
+                                                                  {
+                                                                    "clean": false,
+                                                                    "etype": null
+                                                                  },
+                                                                  {
+                                                                    "Literal": {
+                                                                      "Int": 1
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ],
+                                                            {
+                                                              "Int": [
+                                                                {
+                                                                  "UnboundedR": 1
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "Atomic": [
+                                                    {
+                                                      "clean": false,
+                                                      "etype": null
+                                                    },
+                                                    {
+                                                      "Reference": 139
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      {
+                                        "Int": [
+                                          {
+                                            "UnboundedR": 1
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 140
+                              }
+                            ]
+                          }
+                        ],
+                        {
+                          "Int": [
+                            {
+                              "UnboundedR": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 144,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 139,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 140,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "x"
+        },
+        {
+          "id": 136,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      3
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "x"
+          }
+        }
+      ],
+      [
+        {
+          "User": "y"
+        },
+        {
+          "id": 137,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "y"
+          }
+        }
+      ],
+      [
+        {
+          "User": "z"
+        },
+        {
+          "id": 138,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "z"
+          }
+        }
+      ]
+    ]
+  }
+}

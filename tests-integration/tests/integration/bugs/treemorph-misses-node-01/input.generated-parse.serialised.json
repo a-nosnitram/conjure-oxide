@@ -1,0 +1,236 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "UnsafePow": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 18
+                    }
+                  ]
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Literal": {
+                        "Int": 2
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Sum": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Matrix": [
+                        [
+                          {
+                            "UnsafePow": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Atomic": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Reference": 19
+                                  }
+                                ]
+                              },
+                              {
+                                "Atomic": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Literal": {
+                                      "Int": 2
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "UnsafePow": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Atomic": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Reference": 20
+                                  }
+                                ]
+                              },
+                              {
+                                "Atomic": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Literal": {
+                                      "Int": 2
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        {
+                          "Int": [
+                            {
+                              "Bounded": [
+                                1,
+                                2
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 25,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 19,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      75
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 20,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      75
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 18,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      5
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ]
+    ]
+  }
+}

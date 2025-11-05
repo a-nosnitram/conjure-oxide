@@ -1,0 +1,183 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Eq": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "And": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Matrix": [
+                        [
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 357
+                              }
+                            ]
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 358
+                              }
+                            ]
+                          }
+                        ],
+                        {
+                          "Int": [
+                            {
+                              "UnboundedR": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "And": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "AbstractLiteral": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Matrix": [
+                        [
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 358
+                              }
+                            ]
+                          },
+                          {
+                            "Atomic": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Reference": 359
+                              }
+                            ]
+                          }
+                        ],
+                        {
+                          "Int": [
+                            {
+                              "UnboundedR": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 517,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "x"
+        },
+        {
+          "id": 357,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "x"
+          }
+        }
+      ],
+      [
+        {
+          "User": "y"
+        },
+        {
+          "id": 358,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "y"
+          }
+        }
+      ],
+      [
+        {
+          "User": "z"
+        },
+        {
+          "id": 359,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "z"
+          }
+        }
+      ]
+    ]
+  }
+}

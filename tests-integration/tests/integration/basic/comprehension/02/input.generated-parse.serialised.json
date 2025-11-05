@@ -1,0 +1,545 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "And": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Comprehension": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "generator_submodel": {
+                    "cnf_clauses": [],
+                    "constraints": {
+                      "Root": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        []
+                      ]
+                    },
+                    "symbols": {
+                      "id": 214,
+                      "next_machine_name": 0,
+                      "parent": 213,
+                      "table": [
+                        [
+                          {
+                            "User": "i"
+                          },
+                          {
+                            "id": 182,
+                            "kind": {
+                              "DecisionVariable": {
+                                "category": "Decision",
+                                "domain": {
+                                  "Int": [
+                                    {
+                                      "Bounded": [
+                                        1,
+                                        5
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "name": {
+                              "User": "i"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  },
+                  "induction_vars": [
+                    {
+                      "User": "i"
+                    }
+                  ],
+                  "return_expression_submodel": {
+                    "cnf_clauses": [],
+                    "constraints": {
+                      "Root": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        [
+                          {
+                            "Eq": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "UnsafeIndex": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Reference": 181
+                                      }
+                                    ]
+                                  },
+                                  [
+                                    {
+                                      "Atomic": [
+                                        {
+                                          "clean": false,
+                                          "etype": null
+                                        },
+                                        {
+                                          "Reference": 183
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                ]
+                              },
+                              {
+                                "Minus": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Literal": {
+                                          "Int": 6
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Reference": 183
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    },
+                    "symbols": {
+                      "id": 215,
+                      "next_machine_name": 0,
+                      "parent": 213,
+                      "table": [
+                        [
+                          {
+                            "User": "i"
+                          },
+                          {
+                            "id": 183,
+                            "kind": {
+                              "Given": {
+                                "Int": [
+                                  {
+                                    "Bounded": [
+                                      1,
+                                      5
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "name": {
+                              "User": "i"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "And": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Comprehension": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "generator_submodel": {
+                    "cnf_clauses": [],
+                    "constraints": {
+                      "Root": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        [
+                          {
+                            "Lt": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Atomic": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Reference": 184
+                                  }
+                                ]
+                              },
+                              {
+                                "Atomic": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "Literal": {
+                                      "Int": 4
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    },
+                    "symbols": {
+                      "id": 218,
+                      "next_machine_name": 0,
+                      "parent": 213,
+                      "table": [
+                        [
+                          {
+                            "User": "i"
+                          },
+                          {
+                            "id": 184,
+                            "kind": {
+                              "DecisionVariable": {
+                                "category": "Decision",
+                                "domain": {
+                                  "Int": [
+                                    {
+                                      "Bounded": [
+                                        1,
+                                        5
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "name": {
+                              "User": "i"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  },
+                  "induction_vars": [
+                    {
+                      "User": "i"
+                    }
+                  ],
+                  "return_expression_submodel": {
+                    "cnf_clauses": [],
+                    "constraints": {
+                      "Root": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        [
+                          {
+                            "Imply": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Lt": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "UnsafeIndex": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Atomic": [
+                                          {
+                                            "clean": false,
+                                            "etype": null
+                                          },
+                                          {
+                                            "Reference": 181
+                                          }
+                                        ]
+                                      },
+                                      [
+                                        {
+                                          "Atomic": [
+                                            {
+                                              "clean": false,
+                                              "etype": null
+                                            },
+                                            {
+                                              "Reference": 185
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Literal": {
+                                          "Int": 5
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "Eq": [
+                                  {
+                                    "clean": false,
+                                    "etype": null
+                                  },
+                                  {
+                                    "UnsafeIndex": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Atomic": [
+                                          {
+                                            "clean": false,
+                                            "etype": null
+                                          },
+                                          {
+                                            "Reference": 180
+                                          }
+                                        ]
+                                      },
+                                      [
+                                        {
+                                          "Atomic": [
+                                            {
+                                              "clean": false,
+                                              "etype": null
+                                            },
+                                            {
+                                              "Reference": 185
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "Atomic": [
+                                      {
+                                        "clean": false,
+                                        "etype": null
+                                      },
+                                      {
+                                        "Reference": 185
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    },
+                    "symbols": {
+                      "id": 219,
+                      "next_machine_name": 0,
+                      "parent": 213,
+                      "table": [
+                        [
+                          {
+                            "User": "i"
+                          },
+                          {
+                            "id": 185,
+                            "kind": {
+                              "Given": {
+                                "Int": [
+                                  {
+                                    "Bounded": [
+                                      1,
+                                      5
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "name": {
+                              "User": "i"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 213,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "m"
+        },
+        {
+          "id": 180,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Matrix": [
+                  {
+                    "Int": [
+                      {
+                        "Bounded": [
+                          1,
+                          5
+                        ]
+                      }
+                    ]
+                  },
+                  [
+                    {
+                      "Int": [
+                        {
+                          "Bounded": [
+                            1,
+                            5
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "m"
+          }
+        }
+      ],
+      [
+        {
+          "User": "n"
+        },
+        {
+          "id": 181,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Matrix": [
+                  {
+                    "Int": [
+                      {
+                        "Bounded": [
+                          1,
+                          5
+                        ]
+                      }
+                    ]
+                  },
+                  [
+                    {
+                      "Int": [
+                        {
+                          "Bounded": [
+                            1,
+                            5
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "n"
+          }
+        }
+      ]
+    ]
+  }
+}

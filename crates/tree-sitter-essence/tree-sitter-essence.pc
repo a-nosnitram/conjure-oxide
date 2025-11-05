@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: tree-sitter-essence
+Description: 
+URL: https://github.com/conjure-cp/conjure-oxide
+Version: 0.1.0
+Libs: -L${libdir} -ltree-sitter-essence
+Cflags: -I${includedir}

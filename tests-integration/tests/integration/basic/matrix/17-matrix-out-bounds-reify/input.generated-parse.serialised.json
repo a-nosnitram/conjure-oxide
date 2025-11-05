@@ -1,0 +1,269 @@
+{
+  "cnf_clauses": [],
+  "constraints": {
+    "Root": [
+      {
+        "clean": false,
+        "etype": null
+      },
+      [
+        {
+          "Iff": [
+            {
+              "clean": false,
+              "etype": null
+            },
+            {
+              "Atomic": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "Reference": 237
+                }
+              ]
+            },
+            {
+              "Eq": [
+                {
+                  "clean": false,
+                  "etype": null
+                },
+                {
+                  "UnsafeIndex": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Atomic": [
+                        {
+                          "clean": false,
+                          "etype": null
+                        },
+                        {
+                          "Reference": 236
+                        }
+                      ]
+                    },
+                    [
+                      {
+                        "Sum": [
+                          {
+                            "clean": false,
+                            "etype": null
+                          },
+                          {
+                            "AbstractLiteral": [
+                              {
+                                "clean": false,
+                                "etype": null
+                              },
+                              {
+                                "Matrix": [
+                                  [
+                                    {
+                                      "Atomic": [
+                                        {
+                                          "clean": false,
+                                          "etype": null
+                                        },
+                                        {
+                                          "Reference": 233
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Atomic": [
+                                        {
+                                          "clean": false,
+                                          "etype": null
+                                        },
+                                        {
+                                          "Reference": 234
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  {
+                                    "Int": [
+                                      {
+                                        "UnboundedR": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Atomic": [
+                    {
+                      "clean": false,
+                      "etype": null
+                    },
+                    {
+                      "Reference": 235
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "dominance": null,
+  "search_order": null,
+  "symbols": {
+    "id": 309,
+    "next_machine_name": 0,
+    "parent": null,
+    "table": [
+      [
+        {
+          "User": "a"
+        },
+        {
+          "id": 233,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      2
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "a"
+          }
+        }
+      ],
+      [
+        {
+          "User": "b"
+        },
+        {
+          "id": 234,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      -1,
+                      2
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "b"
+          }
+        }
+      ],
+      [
+        {
+          "User": "c"
+        },
+        {
+          "id": 235,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Int": [
+                  {
+                    "Bounded": [
+                      1,
+                      2
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "c"
+          }
+        }
+      ],
+      [
+        {
+          "User": "m"
+        },
+        {
+          "id": 236,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": {
+                "Matrix": [
+                  {
+                    "Int": [
+                      {
+                        "Bounded": [
+                          1,
+                          2
+                        ]
+                      }
+                    ]
+                  },
+                  [
+                    {
+                      "Int": [
+                        {
+                          "Bounded": [
+                            1,
+                            2
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "name": {
+            "User": "m"
+          }
+        }
+      ],
+      [
+        {
+          "User": "z"
+        },
+        {
+          "id": 237,
+          "kind": {
+            "DecisionVariable": {
+              "category": "Decision",
+              "domain": "Bool"
+            }
+          },
+          "name": {
+            "User": "z"
+          }
+        }
+      ]
+    ]
+  }
+}
