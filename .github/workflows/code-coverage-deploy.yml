@@ -12,20 +12,17 @@ on:
 permissions:
   contents: write
 
-env:
-  rust_release: nightly
-
 jobs:
   deploy-coverage:
     name: "Info: Code Coverage"
-    timeout-minutes: 10
+    timeout-minutes: 120
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set shas
         id: sha
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           result-encoding: string
           script: |
@@ -43,7 +40,7 @@ jobs:
 
 
       - name: Download artifact
-        uses: dawidd6/action-download-artifact@v9
+        uses: dawidd6/action-download-artifact@v11
         with:
           name: code-coverage-${{ steps.sha.outputs.result }}
           workflow: code-coverage.yml
@@ -63,17 +60,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Checkout the pages repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: "gh-pages"
           path: "pages"
 
       - name: Set shas
         id: sha
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           result-encoding: string
           script: |
@@ -103,11 +100,11 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set shas
         id: sha
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           result-encoding: string
           script: |
@@ -124,7 +121,7 @@ jobs:
             return callee_run.head_sha;
 
       - name: Download artifact
-        uses: dawidd6/action-download-artifact@v9
+        uses: dawidd6/action-download-artifact@v11
         with:
           name: code-coverage-${{ steps.sha.outputs.result }}
           workflow: code-coverage.yml
@@ -137,7 +134,7 @@ jobs:
 
       - name: Retrieve list of artifacts for the PR
         id: find_artifacts
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           script: |
             const prNum = process.env.num;
@@ -157,7 +154,7 @@ jobs:
       - name: Find previous artifact
         id: previous-artifact
         if: steps.find_artifacts.outputs.result != '[]'
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           result-encoding: string
           script: |
@@ -172,9 +169,6 @@ jobs:
 
       - run: |
           echo "previous_artifact_id=${{steps.previous-artifact.outputs.result}}" >> $GITHUB_ENV
-
-      - name: Install rust ${{ env.rust_release }}
-        run: rustup update ${{ env.rust_release }} && rustup default ${{ env.rust_release }}
 
       - name: Generate lcov summary for main and pr
         continue-on-error: true
@@ -193,14 +187,14 @@ jobs:
           echo 'EOFABC' >> $GITHUB_OUTPUT
 
       - name: Download doc coverage summary for PR
-        uses: dawidd6/action-download-artifact@v9
+        uses: dawidd6/action-download-artifact@v11
         with:
           workflow: code-coverage.yml
           pr: ${{steps.prnum.outputs.num}}
           name: pr-doc-coverage-summary
 
       - name: Download doc coverage summary for main
-        uses: dawidd6/action-download-artifact@v9
+        uses: dawidd6/action-download-artifact@v11
         with:
           workflow: code-coverage-main.yml
           branch: main
@@ -228,7 +222,7 @@ jobs:
 
 
       - name: Find coverage comment
-        uses: peter-evans/find-comment@v3
+        uses: peter-evans/find-comment@v4
         continue-on-error: true
         id: fc
         with:
@@ -238,7 +232,7 @@ jobs:
 
       - name: Delete coverage comment if it exists
         if: steps.fc.outputs.comment-id != ''
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           script: |
             github.rest.issues.deleteComment({
@@ -249,7 +243,7 @@ jobs:
 
       - name: Download the previous lcov.info (historical) file
         if: steps.find_artifacts.outputs.result != '[]'
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: code-coverage-${{ steps.prnum.outputs.num}}-${{ env.previous_artifact_id }}
           path: ./tools/code-coverage-diff/deploy-prev
@@ -315,7 +309,7 @@ jobs:
 
       - name: Create coverage comment (no previous lcov)
         if: steps.find_artifacts.outputs.result == '[]'
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ steps.prnum.outputs.num }}
           body: |
@@ -356,7 +350,7 @@ jobs:
 
       - name: Create coverage comment (previous lcov)
         if: steps.find_artifacts.outputs.result != '[]'
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ steps.prnum.outputs.num }}
           body: |
