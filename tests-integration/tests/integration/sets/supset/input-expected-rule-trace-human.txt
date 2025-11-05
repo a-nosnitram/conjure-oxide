@@ -96,8 +96,5 @@ letting b be Set([Int(2), Int(3)])
 
 such that
 
-(Set([Int(2), Int(3)]) subsetEq Set([Int(1), Int(2), Int(3)])),
-or([WatchedLiteral(__0,false),WatchedLiteral(__1,false);int(1..)]),
-Reify((Set([Int(1), Int(2), Int(3)]) subsetEq Set([Int(2), Int(3)])), __0),
-Reify((Set([Int(2), Int(3)]) subsetEq Set([Int(1), Int(2), Int(3)])), __1)
+true
 

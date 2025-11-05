@@ -8,10 +8,10 @@ use conjure_cp::rule_engine::{
     ApplicationError::RuleNotApplicable, ApplicationResult, Reduction, register_rule,
     register_rule_set,
 };
-use itertools::{izip, Itertools as _};
+use itertools::{Itertools as _, izip};
 use std::collections::HashSet;
-use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Arc;
+use std::sync::atomic::{AtomicBool, Ordering};
 use uniplate::Biplate;
 
 use super::partial_eval::run_partial_evaluator;
@@ -72,11 +72,10 @@ fn constant_evaluator(expr: &Expr, symtab: &SymbolTable) -> ApplicationResult {
 /// `Some(Const)` if the expression can be simplified to a constant
 pub fn eval_constant(expr: &Expr) -> Option<Lit> {
     match expr {
-        // TODO: need to specify for subsetEq etc
-        Expr::Intersect(_, a, b) => match (a.as_ref(), b.as_ref()) {
+        Expr::Supset(_, a, b) => match (a.as_ref(), b.as_ref()) {
             (
-                Expr::AbstractLiteral(_, AbstractLiteral::Set(a)),
-                Expr::AbstractLiteral(_, AbstractLiteral::Set(b)),
+                Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(a)))),
+                Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),
             ) => {
                 let a_set: HashSet<Lit> = a.iter().cloned().collect();
                 let b_set: HashSet<Lit> = b.iter().cloned().collect();
@@ -93,10 +92,18 @@ pub fn eval_constant(expr: &Expr) -> Option<Lit> {
             (
                 Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(a)))),
                 Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),
-            )
-            | (
+            ) => Some(Lit::Bool(
+                a.iter()
+                    .cloned()
+                    .collect::<HashSet<Lit>>()
+                    .is_superset(&b.iter().cloned().collect::<HashSet<Lit>>()),
+            )),
+            _ => None,
+        },
+        Expr::Subset(_, a, b) => match (a.as_ref(), b.as_ref()) {
+            (
+                Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(a)))),
                 Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),
-                Expr::AbstractLiteral(_, AbstractLiteral::Set(a)),
             ) => {
                 let a_set: HashSet<Lit> = a.iter().cloned().collect();
                 let b_set: HashSet<Lit> = b.iter().cloned().collect();
@@ -138,35 +145,9 @@ pub fn eval_constant(expr: &Expr) -> Option<Lit> {
         },
         Expr::Union(_, a, b) => match (a.as_ref(), b.as_ref()) {
             (
-                Expr::AbstractLiteral(_, AbstractLiteral::Set(a)),
-                Expr::AbstractLiteral(_, AbstractLiteral::Set(b)),
-            ) => {
-                //we do this to check that all elements are literals
-                let mut list: Vec<Lit> = Vec::new();
-                for expr in a.iter() {
-                    if let Expr::Atomic(_, Atom::Literal(x)) = expr {
-                        list.push(x.clone());
-                    } else {
-                        return None;
-                    }
-                }
-                for expr in b.iter() {
-                    if let Expr::Atomic(_, Atom::Literal(x)) = expr {
-                        if list.contains(&x) {
-                            continue;
-                        }
-                        list.push(x.clone());
-                    } else {
-                        return None;
-                    }
-                }
-                Some(Lit::AbstractLiteral(AbstractLiteral::Set(list)))
-            }
-            (
-                Expr::AbstractLiteral(_, AbstractLiteral::Set(a)),
+                Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(a)))),
                 Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),
-            )
-            | (Expr::Atomic(_, Atom::Literal(Lit::AbstractLiteral(AbstractLiteral::Set(b)))),) => {
+            ) => {
                 let mut res: Vec<Lit> = Vec::new();
                 for lit in a.iter() {
                     res.push(lit.clone());
